@@ -2,7 +2,7 @@ import React from 'react';
 import bannerBg from './Images/banner-bg.png';
 import Header from './Header/header';
 import Logo from './Logo/Logo';
-
+import MainHeader from './Main_Header/Main_Header';
 
 function BannerContainer() {
   return (
@@ -12,6 +12,7 @@ function BannerContainer() {
     >
     <Header/>
     <Logo/>
+    <MainHeader/>
     </div>
   );
 }
