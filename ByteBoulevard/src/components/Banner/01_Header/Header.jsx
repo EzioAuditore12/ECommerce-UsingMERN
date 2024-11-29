@@ -11,13 +11,13 @@ function Header() {
   ];
 
   return (
-    <div className="w-[60%] bg-black text-white py-4 clip-banner">
+    <div className="w-[60%] bg-black text-white py-4 clip-banner hidden sm:block">
       <div className="flex justify-center">
         {navLinks.map((link, index) => (
           <a
             key={index}
             href={link.href}
-            className="hover:text-gray-300 text-sm px-6"
+            className="hover:text-gray-300 text-xs px-6"
           >
             {link.text}
           </a>
