@@ -11,7 +11,7 @@ function Header() {
   ];
 
   return (
-    <div className="md:w-[60%] bg-black text-white py-4 hidden sm:block">
+    <div className="md: bg-black text-white py-4 hidden sm:block">
       <div className="flex justify-center">
         {navLinks.map((link, index) => (
           <a
