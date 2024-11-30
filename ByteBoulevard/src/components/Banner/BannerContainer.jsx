@@ -4,7 +4,7 @@ import Logo from './02_Logo/Logo';
 import Main_Header from './03_mainHeader/Main_Header';
 function BannerContainer() {
   return (
-    <div className="bg-center bg-cover h-auto w-[100%] flex justify-center flex-col p-4 md:items-center"  style={{ backgroundImage: `url(${bgImg})` }}>
+    <div className="bg-center bg-cover h-auto w-[100%] flex items-center flex-col p-4 "  style={{ backgroundImage: `url(${bgImg})` }}>
     <Logo/>
     <Main_Header/>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css"; // Import custom styles for clip-path
+import "./header.css"; 
 
 function Header() {
   const navLinks = [
