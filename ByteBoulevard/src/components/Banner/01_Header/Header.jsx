@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.css"; 
+import "./header.css"; // Import custom styles for clip-path
 
 function Header() {
   const navLinks = [
@@ -11,7 +11,7 @@ function Header() {
   ];
 
   return (
-    <div className="w-[60%] bg-black text-white py-4 clip-banner hidden sm:block">
+    <div className="md:w-[60%] bg-black text-white py-4 hidden sm:block">
       <div className="flex justify-center">
         {navLinks.map((link, index) => (
           <a
