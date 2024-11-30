@@ -2,7 +2,7 @@ import React from 'react'
 
 function Logo() {
   return (
-    <div className='flex justify-center items-center h-[100px] w-full '>
+    <div className='flex justify-center items-center h-[70px] w-full '>
         <h1 className='text-3xl text-white font-bold cursor-pointer'>ByteBoulevard</h1>
     </div>
   )
