@@ -19,13 +19,13 @@ function FirstPart() {
     
       <div className='flex '>
     {/* Cart Icon */}
-      <div className="flex items-center text-sm mx-1 cursor-pointer">
+      <div className="flex items-center text-sm mx-1 cursor-pointer hover:text-orange-400">
         <p>Cart</p>
         <img className="ml-1 h-6 w-4" src={cartIconSvg}alt="cart-icon" />
       </div>
 
       {/* User Icon */}
-      <div className="flex items-center text-sm mx-1 cursor-pointer">
+      <div className="flex items-center text-sm mx-1 cursor-pointer hover:text-orange-400">
         <p>User</p>
         <img className="ml-1 h-4 w-4" src={userIconSvg} alt="user-icon" />
       </div>
