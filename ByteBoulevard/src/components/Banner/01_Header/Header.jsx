@@ -17,7 +17,7 @@ function Header() {
           <a
             key={index}
             href={link.href}
-            className="hover:text-gray-300 text-xs px-6 text-center"
+            className="hover:text-gray-300 text-xs px-6 text-center lg:text-sm"
           >
             {link.text}
           </a>
