@@ -4,7 +4,7 @@ import searchIconSvg from './Images/searchEngine.svg'
 function SecondPart() {
   return (
     <div className='mx-2.5 my-2.5 flex items-center '>
-        <img src={toggleIcon} className='h-7 w-7 mx-1 '/>
+        <img src={toggleIcon} className='h-7 w-7 mx-1 cursor-pointer'/>
         
         <div className="flex items-center justify-center mx-3 sm:ml-5">
                 <input
@@ -14,7 +14,7 @@ function SecondPart() {
                 />
                 <div className="bg-orange-600 p-2 rounded-r flex justify-center items-center">
                     <img
-                        className="h-[20px] w-[20px] scale-x-[-1]"
+                        className="h-[20px] w-[20px] scale-x-[-1] cursor-pointer"
                         src={searchIconSvg}
                         alt="search-icon"
                     />
