@@ -8,7 +8,7 @@ function FirstPart() {
   return (
     <div className="flex justify-between text-white sm:order-1" >
       {/* Language Selector */}
-      <select className=" rounded px-2 py-1 text-xs bg-transparent text-black">
+      <select className=" rounded px-2 py-1 text-xs bg-transparent text-black md:bg-white max-h-8 mt-3 mr-2">
         {languageOptions.map((option, index) => (
           <option key={index} value={option}>
             {option}
