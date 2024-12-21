@@ -1,35 +1,15 @@
 import React from 'react';
-import userIconSvg from './Images/user-icon.png'
-import cartIconSvg from './Images/shoppingCart.svg'
-
-const languageOptions = ['English', 'Spanish', 'French']; 
+import LanguageSelector from './01_LanguageSelector';
+import Cart_User from './02_Cart_User';
 
 function FirstPart() {
   return (
-    <div className="flex justify-between text-white sm:order-1" >
+    <div className="flex justify-between text-white mb-3 md:mb-0 md:gap-x-2 sm:order-1 lg:gap-x-5" >
       {/* Language Selector */}
-      <select className=" rounded px-2 py-1 text-xs bg-transparent text-black md:bg-white max-h-8 mt-3 mr-2">
-        {languageOptions.map((option, index) => (
-          <option key={index} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
+      <LanguageSelector/>
 
-    
-      <div className='flex '>
-    {/* Cart Icon */}
-      <div className="flex items-center text-sm mx-1 cursor-pointer hover:text-orange-400">
-        <p>Cart</p>
-        <img className="ml-1 h-6 w-4" src={cartIconSvg}alt="cart-icon" />
-      </div>
-
-      {/* User Icon */}
-      <div className="flex items-center text-sm mx-1 cursor-pointer hover:text-orange-400">
-        <p>User</p>
-        <img className="ml-1 h-4 w-4" src={userIconSvg} alt="user-icon" />
-      </div>
-        </div>
+      {/* Cart and User Icons */}
+      <Cart_User/>
 </div>
   );
 }

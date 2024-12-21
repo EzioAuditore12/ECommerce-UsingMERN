@@ -5,7 +5,7 @@ import SecondPart from './02_secondPart/secondPart'
 
 function Main_Header() {
   return (
-    <div className='md:flex '>
+    <div className='md:flex md:gap-x-5'>
        <FirstPart/>
        <SecondPart/>
     </div>
