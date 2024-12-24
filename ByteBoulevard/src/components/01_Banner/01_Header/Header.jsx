@@ -1,5 +1,4 @@
 import React from "react";
-import "./header.css"; // Import custom styles for clip-path
 
 function Header() {
   const navLinks = [
@@ -11,7 +10,11 @@ function Header() {
   ];
 
   return (
-    <div className=" bg-black text-white py-4 hidden md:block">
+    <div className="bg-black text-white py-4 hidden md:block absolute top-0 w-[760px]"
+         style={{ 
+           clipPath: "polygon(0 0, 100% 0, 95% 100%, 5% 100%)",
+           background: "linear-gradient(90deg, #1a1a1a 0%, #333333 100%)"
+         }}>
       <div className="flex justify-center">
         {navLinks.map((link, index) => (
           <a

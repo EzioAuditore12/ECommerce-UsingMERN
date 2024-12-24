@@ -5,6 +5,7 @@ function AddCard({
   logo,
   title,
   description,
+  logoImage,
 }) {
   return (
     <div className='hidden lg:block bg-cover bg-center w-[220px] h-[300px] border-4 border-white p-3' 
@@ -12,7 +13,7 @@ function AddCard({
       {/* Logo */}
       <div className="w-12 h-12 mb-4">
         <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" 
+          src={logoImage} 
           alt="Samsung logo" 
           className="w-full h-full object-contain"
         />
@@ -20,8 +21,8 @@ function AddCard({
       
       {/* Content */}
       <div className="text-white mt-auto">
-        <h3 className="text-xl font-bold mb-2">Galaxy S24 Ultra</h3>
-        <p className="text-sm mb-4 opacity-90">Experience the power of AI</p>
+        <h3 className="text-xl font-bold mb-2">{title}</h3>
+        <p className="text-sm mb-4 opacity-90">{description}</p>
         
         {/* Shop Now Button */}
         <button className="bg-white text-black px-4 py-2 rounded-full text-sm 
