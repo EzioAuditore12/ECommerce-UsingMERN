@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import BannerContainer from './components/01_Banner/BannerContainer'
-import TopPicks from './components/02_ProductItems/TopPicks'
+import MainBody from './components/02_ProductItems/MainBody'
 
 function App() {
   return (
     <div className='mb-[80px]'>
       <BannerContainer/>
-      <div className='flex flex-col items-center justify-center'>
-      <TopPicks/>
-      </div>
+      <MainBody/>
     </div>
   )
 }
