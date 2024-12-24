@@ -84,7 +84,7 @@ function TopPicks() {
   return (
     <div className='border w-[90%] rounded-md p-3 md:w-[95%] lg:w-[80%] bg-white'>
       <CategoryTitle title="Tech Best Sellers"/>
-      <div className='grid h-[700px] grid-rows-8 md:h-[200px] md:grid-cols-12 md:w-auto md:gap-x-[200px] md:overflow-x-scroll'>
+      <div className='grid h-[700px] grid-rows-8 md:h-[200px] md:grid-cols-12 md:w-auto md:gap-x-[175px] md:overflow-x-scroll'>
         {displayedProducts.map(product => (
           <ProductCard 
             key={product.id}
