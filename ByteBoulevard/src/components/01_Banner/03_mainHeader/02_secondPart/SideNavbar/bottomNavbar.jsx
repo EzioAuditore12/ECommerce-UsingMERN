@@ -15,14 +15,14 @@ function BottomNavbar() {
   ]
 
   return (
-    <div className='fixed bottom-0 w-full bg-white h-[60px] border-t border-gray-200 shadow-lg rounded-lg md:hidden'>
-      <div className='flex flex-row justify-center items-center h-full'>
+    <div className='fixed flex justify-center items-center bottom-0 w-full bg-white h-[60px] rounded-lg md:hidden'>
+      <div className='flex flex-row justify-center items-center w-full'>
         {navItems.map((item, index) => (
-          <div key={index} className='flex items-center mx-9'>
+          <div key={index} className='flex items-center xs:mx-7 mx-9'>
             <img 
               src={item.icon} 
               alt="nav icon"
-              className="w-[25px] h-[25px]"
+              className="cursor-pointer xs:w-[20px] xs:h-[20px] h-[40px] w-[40px]"
             />
           </div>
         ))}
