@@ -60,7 +60,7 @@ const Carousel = () => {
                   <img 
                     src={slide.image} 
                     alt={slide.content} 
-                    className="h-[250px] w-auto object-contain"
+                    className="h-[250px] w-[250px] object-contain"
                   />
                 </div>
               </div>
