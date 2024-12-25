@@ -18,11 +18,11 @@ function BottomNavbar() {
     <div className='fixed flex justify-center items-center bottom-0 w-full bg-white h-[60px] rounded-lg md:hidden'>
       <div className='flex flex-row justify-center items-center w-full'>
         {navItems.map((item, index) => (
-          <div key={index} className='flex items-center xs:mx-7 mx-9'>
+          <div key={index} className='flex items-center w-full justify-evenly'>
             <img 
               src={item.icon} 
               alt="nav icon"
-              className="cursor-pointer xs:w-[20px] xs:h-[20px] h-[40px] w-[40px]"
+              className="cursor-pointer w-[25px] h-[25px]"
             />
           </div>
         ))}
