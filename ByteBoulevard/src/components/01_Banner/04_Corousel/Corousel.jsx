@@ -9,7 +9,7 @@ const Carousel = () => {
     { 
       id: 1, 
       content: "ELEVATE your everyday", 
-      image: "https://images.samsung.com/is/image/samsung/p6pim/in/2401/gallery/in-galaxy-s24-s928-sm-s928bzycins-539573502?imbypass=true", 
+      image: "https://exstatic-in.iqoo.com/Oz84QB3Wo0uns8j1/in/1708057309675/4be91554efa73c48980359bd8c5ee754.png.webp", 
       deal: "From ₹31,999*",
       subtitle: "Android Advantage",
       bgColor: "bg-green-50"
