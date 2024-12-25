@@ -5,7 +5,7 @@ function SearchBar() {
     <input 
         type="text"
         placeholder="Search..."
-        className="w-[60%] h-[40px] p-2 rounded bg-[#F0F5FF] "
+        className="w-[45%] lg:w-[60%] h-[40px] p-2 rounded bg-[#F0F5FF] "
     />
   )
 }
