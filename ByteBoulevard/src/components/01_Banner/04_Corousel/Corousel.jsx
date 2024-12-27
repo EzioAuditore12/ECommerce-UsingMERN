@@ -56,7 +56,7 @@ const Carousel = () => {
                   </button>
                 </div>
                 {/* Right Image */}
-                <div className="flex-1 flex justify-center items-center">
+                <div className="flex-1 flex justify-center items-center mr-1">
                   <img 
                     src={slide.image} 
                     alt={slide.content} 
