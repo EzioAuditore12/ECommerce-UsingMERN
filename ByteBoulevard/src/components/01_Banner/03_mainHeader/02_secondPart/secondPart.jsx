@@ -49,7 +49,7 @@ function SecondPart() {
         />
         <div className="bg-orange-600 p-[0.44rem] rounded-r flex justify-center items-center">
           <img
-            className="h-[20px] w-[20px] scale-x-[-1] cursor-pointer"
+            className="h-[20px] w-[20px] cursor-pointer"
             src={searchIconSvg}
             alt="search-icon"
           />
