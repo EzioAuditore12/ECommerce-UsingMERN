@@ -8,7 +8,7 @@ function Cart_User() {
     {/* Cart Icon */}
       <div className="flex items-center text-sm cursor-pointer hover:text-orange-400">
         <p>Cart</p>
-        <img className="h-6 w-4" src={cartIconSvg}alt="cart-icon" />
+        <img className="h-6 w-4 fill-white" src={cartIconSvg} alt="cart-icon" />
       </div>
 
       {/* User Icon */}

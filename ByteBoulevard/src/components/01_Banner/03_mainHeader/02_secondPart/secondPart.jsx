@@ -43,7 +43,7 @@ function SecondPart() {
       {/* Search Bar */}
       <div className="flex items-center justify-center ">
         <input
-          className="border border-gray-300 rounded-l p-1 w-[280px]"
+          className="border border-gray-300 rounded-l p-1 w-[75vw] md:w-[400px]"
           type="text"
           placeholder="Search"
         />

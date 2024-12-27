@@ -44,7 +44,7 @@ const Carousel = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className={`relative h-[300px] ${slide.bgColor} bg-opacity-70`}>
+            <div className={`relative h-[300px] ${slide.bgColor} bg-opacity-70 `}>
               <div className="flex h-full items-center justify-center gap-4 px-8">
                 {/* Left Content */}
                 <div className="flex-1 flex flex-col items-center justify-center text-center">
