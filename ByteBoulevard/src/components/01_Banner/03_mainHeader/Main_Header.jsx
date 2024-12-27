@@ -6,7 +6,7 @@ import BottomNavbar from './02_secondPart/SideNavbar/bottomNavbar'
 function Main_Header() {
   return (
     <>
-    <div className='w-full p-2 md:flex md:justify-center md:gap-x-5'>
+    <div className='w-full p-2 md:flex md:justify-center md:gap-x-2'>
        <FirstPart/>
        <SecondPart/>
     </div>

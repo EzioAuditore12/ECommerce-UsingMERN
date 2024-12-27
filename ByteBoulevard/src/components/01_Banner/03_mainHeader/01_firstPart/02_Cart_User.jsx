@@ -4,7 +4,7 @@ import cartIconSvg from './Images/shoppingCart.svg'
 
 function Cart_User() {
   return (
-    <div className='flex flex-row md:gap-1'>
+    <div className='flex flex-row gap-x-1'>
     {/* Cart Icon */}
       <div className="flex items-center text-sm cursor-pointer hover:text-orange-400">
         <p>Cart</p>

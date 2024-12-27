@@ -13,7 +13,7 @@ function SecondPart() {
   };
 
   return (
-    <div className="gap-x-2.5 flex items-center lg:gap-x-5">
+    <div className="w-full md:w-[600px] flex items-center justify-center gap-x-2">
       {/* Sidebar Component */}
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
@@ -41,9 +41,9 @@ function SecondPart() {
       </select>
 
       {/* Search Bar */}
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center w-full">
         <input
-          className="border border-gray-300 rounded-l p-1 w-[75vw] md:w-[400px]"
+          className="border border-gray-300 rounded-l p-1 w-[92%]"
           type="text"
           placeholder="Search"
         />
