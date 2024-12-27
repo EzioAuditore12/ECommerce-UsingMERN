@@ -2,7 +2,7 @@ import React from 'react'
 import ProductCard from '../../shared/01_productCard'
 import CategoryTitle from '../../shared/02_categoryTitle'
 
-function TopPicks() {
+function TopTechPicks() {
   const products = [
     { 
       id: 1, 
@@ -97,4 +97,4 @@ function TopPicks() {
   )
 }
 
-export default TopPicks
+export default TopTechPicks
