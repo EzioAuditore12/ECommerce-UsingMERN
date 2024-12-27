@@ -15,7 +15,7 @@ function BottomNavbar() {
   ]
 
   return (
-    <div className='fixed flex justify-center items-center bottom-0 w-full bg-white h-[60px] rounded-lg md:hidden'>
+    <div className='z-20 fixed flex justify-center items-center bottom-0 w-full bg-white h-[60px] rounded-lg md:hidden'>
       <div className='flex flex-row justify-center items-center w-full'>
         {navItems.map((item, index) => (
           <div key={index} className='flex items-center w-full justify-evenly'>
