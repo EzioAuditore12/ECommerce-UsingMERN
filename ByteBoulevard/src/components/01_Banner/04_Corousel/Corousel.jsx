@@ -33,19 +33,19 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="w-full max-w-5xl mx-auto mt-4">
+    <div className="w-full md:w-[70%] lg:w-[60%] mt-4">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={20}
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
-        className="rounded-lg overflow-hidden shadow-lg"
+        className="overflow-hidden shadow-lg"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className={`relative h-[300px] ${slide.bgColor} bg-opacity-70 `}>
-              <div className="flex h-full items-center justify-center gap-4 px-8">
+            <div className={`h-[300px] ${slide.bgColor} bg-opacity-70`}>
+              <div className="flex h-full items-center justify-center ">
                 {/* Left Content */}
                 <div className="flex-1 flex flex-col items-center justify-center text-center">
                   <span className="text-sm font-medium mb-2">{slide.subtitle}</span>
