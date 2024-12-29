@@ -24,7 +24,7 @@ const MediumSearchBar = () => {
 
   return (
     <div
-      className={`gap-x-2 lg:px-12 hidden fixed top-0 w-full z-50 bg-[#FFFFFF] shadow-md h-[60px] ${
+      className={`gap-x-2 lg:px-12 hidden fixed top-0 w-full z-50 bg-gray-900 shadow-lg h-[60px] ${
         isSticky ? "md:flex md:justify-center md:items-center " : "hidden"
       }`}
     >
