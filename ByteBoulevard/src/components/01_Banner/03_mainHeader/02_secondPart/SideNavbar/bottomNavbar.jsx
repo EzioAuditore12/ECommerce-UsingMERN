@@ -1,17 +1,17 @@
 import React from 'react'
-import menuIcon from '../../../../../assets/icons/menu.svg'
-import shopIcon from '../../../../../assets/icons/shop.svg'
-import homeIcon from '../../../../../assets/icons/home.svg'
-import heartIcon from '../../../../../assets/icons/heart.svg'
-import gridIcon from '../../../../../assets/icons/grid.svg'
+import { RiMenu2Line } from 'react-icons/ri'
+import { BsShop } from 'react-icons/bs'
+import { AiOutlineHome, AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineHeart } from 'react-icons/ai'
+import { BsGrid } from 'react-icons/bs'
 
 function BottomNavbar() {
   const navItems = [
-    { icon: menuIcon },
-    { icon: shopIcon },
-    { icon: homeIcon },
-    { icon: heartIcon },
-    { icon: gridIcon }
+    { icon: RiMenu2Line },
+    { icon: BsShop },
+    { icon: AiOutlineHome },
+    { icon: AiOutlineSearch },
+    { icon: BsGrid }
   ]
 
   return (
@@ -19,9 +19,7 @@ function BottomNavbar() {
       <div className='flex flex-row justify-center items-center w-full'>
         {navItems.map((item, index) => (
           <div key={index} className='flex items-center w-full justify-evenly'>
-            <img 
-              src={item.icon} 
-              alt="nav icon"
+            <item.icon 
               className="cursor-pointer w-[25px] h-[25px]"
             />
           </div>
