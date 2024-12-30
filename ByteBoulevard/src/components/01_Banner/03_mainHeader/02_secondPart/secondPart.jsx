@@ -1,27 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import toggleIcon from "./Images/toggle-icon.png";
 import searchIconSvg from "./Images/searchEngine.svg";
 import Sidebar from "./SideNavbar/sideNavBar";
+import { useDispatch } from "react-redux";
+import { toggleSidebar } from "../../../../ActionSlices/sideBarSlice";
 
 function SecondPart() {
   const categorySection = ["firstAction", "secondAction", "thirdAction"];
-
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  const dispatch = useDispatch();
 
   return (
     <div className="w-full md:w-[600px] flex items-center justify-center gap-x-2">
       {/* Sidebar Component */}
-      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+      <Sidebar />
 
       {/* Toggle Icon */}
       <img
         src={toggleIcon}
         className="h-7 w-7 cursor-pointer"
-        onClick={toggleSidebar} 
+        onClick={() => dispatch(toggleSidebar())}
         alt="Toggle Sidebar"
       />
 

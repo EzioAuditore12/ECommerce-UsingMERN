@@ -15,7 +15,7 @@ const RecommendedTiles = ({ products }) => {
               src={product.productImage}
               alt={product.productName}
               className={`w-full ${
-                index === 0 ? 'h-[60%] w-full md:w-[97%]' : 'h-[20%] w-[41%]'
+                index === 0 ? 'h-[60%] w-full md:w-[97%]' : 'h-[20%] w-[40%]'
               }`}
             />
             <div className="p-4">

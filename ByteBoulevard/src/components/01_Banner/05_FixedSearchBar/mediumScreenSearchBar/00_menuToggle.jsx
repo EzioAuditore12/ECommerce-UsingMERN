@@ -1,12 +1,17 @@
-import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { toggleSidebar } from '../../../../ActionSlices/sideBarSlice';
+import { RiMenu2Line } from 'react-icons/ri';
 
-function MenuToggle() {
-    return (
-        <div className="flex items-center justify-center cursor-pointer">
-            <GiHamburgerMenu className="w-[30px] h-[30px] text-white hover:text-gray-300" />
-        </div>
-    );
-}
+const MenuToggle = () => {
+  const dispatch = useDispatch();
+
+  return (
+    <RiMenu2Line 
+      className="cursor-pointer w-[25px] h-[25px] text-white"
+      onClick={() => dispatch(toggleSidebar())}
+    />
+  );
+};
 
 export default MenuToggle;

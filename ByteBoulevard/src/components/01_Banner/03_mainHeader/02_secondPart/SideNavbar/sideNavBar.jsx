@@ -1,5 +1,11 @@
 import React from "react";
-function Sidebar({ isOpen, onClose }) {
+import { useSelector, useDispatch } from "react-redux";
+import { closeSidebar } from "../../../../../ActionSlices/sideBarSlice";
+
+function Sidebar() {
+  const dispatch = useDispatch();
+  const isOpen = useSelector((state) => state.sidebar.isSidebarOpen);  // Fixed selector path
+  
   const sideBarData = [
     { title: "Home", link: "/home" },
     { title: "Fashion", link: "/fashion" },
@@ -9,12 +15,12 @@ function Sidebar({ isOpen, onClose }) {
 
   return (
     <div
-      className={`z-10 fixed top-0 left-0 h-full w-[250px] bg-black text-white transition-transform duration-300 ${
+      className={`z-[100] fixed top-0 left-0 h-full w-[250px] bg-black text-white transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
       <button
-        onClick={onClose}
+        onClick={() => dispatch(closeSidebar())}
         className="absolute top-4 right-4 text-white text-xl "
       >
         ✖
