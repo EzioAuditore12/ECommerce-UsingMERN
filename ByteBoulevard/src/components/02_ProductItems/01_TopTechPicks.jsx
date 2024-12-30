@@ -83,7 +83,7 @@ function TopTechPicks() {
   const displayedProducts = isMobile ? products.slice(0, 8) : products;
 
   return (
-    <div className='border w-[90%] rounded-md p-3 md:w-[95%] lg:w-[80%] bg-white'>
+    <div className='border w-full rounded-md p-3 md:w-[95%] lg:w-[80%] bg-white'>
       <CategoryTitle title="Tech Best Sellers"/>
       <div className='grid h-[700px] grid-rows-8 md:h-[200px] md:grid-cols-12 md:w-auto md:gap-x-[175px] md:overflow-x-scroll'>
         {displayedProducts.map(product => (

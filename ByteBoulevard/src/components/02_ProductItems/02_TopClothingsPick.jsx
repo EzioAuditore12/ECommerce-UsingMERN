@@ -94,7 +94,7 @@ function TopClothingPicks() {
   const displayedProducts = isMobile ? products2.slice(0, 8) : products2;
 
   return (
-    <div className='border w-[90%] rounded-md p-3 md:w-[95%] lg:w-[95%] bg-white'>
+    <div className='border w-full rounded-md p-3 md:w-[95%] lg:w-[95%] bg-white'>
       <CategoryTitle title="Top Clothing Picks"/>
       <div className='grid h-[700px] grid-rows-8 md:h-[200px] md:grid-cols-12 md:w-auto md:gap-x-[175px] md:overflow-x-scroll'>
         {displayedProducts.map(product => (

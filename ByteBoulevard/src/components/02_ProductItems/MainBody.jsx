@@ -1,7 +1,8 @@
 import React from 'react'
-import TopTechPicks from './01_TopPicks'
+import TopTechPicks from './01_TopTechPicks'
 import AddCard from '../../shared/03_addCard'
 import TopClothingPicks from './02_TopClothingsPick'
+import BestFitUser from './03_BestFitUser'
 function MainBody() {
   return (
     <div className='w-full flex justify-center items-center flex-col gap-y-4'>
@@ -10,6 +11,7 @@ function MainBody() {
         <AddCard title='Galaxy S24 Ultra' description='Experience the power of AI' logoImage  ='https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png' />
     </div>
     <TopClothingPicks/>
+    <BestFitUser/>
     </div>
   )
 }
