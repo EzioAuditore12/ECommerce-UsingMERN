@@ -83,7 +83,7 @@ function Carousel() {
         {slides.map((slide) => (
           <div
             key={slide.id}
-            className={`flex-shrink-0 w-full h-[500px] ${slide.bgColor} bg-opacity-70 flex flex-col md:flex-row items-center rounded-2xl`}
+            className={`flex-shrink-0 w-full h-[600px] md:h-[500px] ${slide.bgColor} bg-opacity-70 flex flex-col md:flex-row items-center rounded-2xl`}
           >
             <div className="w-full md:w-3/5 text-center md:text-left px-6 py-4">
               <span className="text-sm font-medium mb-2 block">
