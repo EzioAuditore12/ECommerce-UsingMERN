@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function AddCard({ logoImage, title, description, productImage, backgroundUrl }) {
   return (
     <div
-      className="flex flex-col bg-cover bg-center w-full max-w-xs h-[300px] border border-gray-300 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
+      className="hidden lg:flex flex-col bg-cover bg-center w-full max-w-xs h-[300px] border border-gray-300 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105"
       style={{
         backgroundImage: `url(${backgroundUrl || 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=1000&auto=format&fit=crop'})`,
       }}
