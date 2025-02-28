@@ -6,7 +6,7 @@ function Header() {
     { text: "Gift Ideas", href: "#" },
     { text: "New Releases", href: "#" },
     { text: "Today's Deals", href: "#" },
-    { text: "Customer Service", href: "#" },
+    { text: "Customer Service ", href: "#" },
   ];
 
   return (
